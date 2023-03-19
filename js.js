@@ -6,6 +6,11 @@ var sec=0
 var min=0
 var timeconuter
 
+
+
+
+
+
 start.addEventListener("click", start1);
 pause.addEventListener("click", pause1);
 stopp.addEventListener("click", stopp1);
@@ -18,7 +23,7 @@ function start1 (){
    time()
     timeconuter =  setInterval(time,1000)
 
-
+    start.disabled = true;
 }
 
 
@@ -26,12 +31,31 @@ function start1 (){
 
 function pause1(){
 clearInterval(timeconuter)
+
+
+if (start.disabled = true) {
+   start.disabled = false;
+}
+
+
+
+
+
 }
 function stopp1(){
 clearInterval(timeconuter)
 sec=0
 min=0
 hr=0
+
+
+if (start.disabled = true) {
+    start.disabled = false;
+}
+
+
+
+
 document.getElementById("time").innerText=`00:00:00`
 }
 
