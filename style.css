@@ -8,7 +8,7 @@
 body{
     text-align: center;
     align-items: center;
-    background-color: pink;
+    background-color:#76bdfc;
     
 }
 
@@ -20,13 +20,21 @@ h1{
     margin-top: 12%;
     margin-bottom: 60px;
     font-size: 40px;
-}
-
-button{
-    padding: 10px 20px;
     
 }
 
+button{
+    padding: 15px 25px;
+    background-color: rgb(182, 221, 255);
+    border: none;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+button:hover{
+
+    background-color: rgb(87, 127, 161);
+  
+}
 #start{
 
 }
