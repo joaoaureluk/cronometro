@@ -15,7 +15,13 @@ start.addEventListener("click", start1);
 pause.addEventListener("click", pause1);
 stopp.addEventListener("click", stopp1);
 
+addEventListener("keypress", function(e){
 
+    if(e.key === ''){
+    start.click()
+    }
+
+})
 
 
 
